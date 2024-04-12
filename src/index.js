@@ -8,7 +8,7 @@ import {HTML5Backend} from 'react-dnd-html5-backend'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     
     
     <DndProvider backend={HTML5Backend}>
