@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jsappOne/static/css/main.bff29bbd.css",
+    "main.js": "/jsappOne/static/js/main.0ffcc8a0.js",
+    "index.html": "/jsappOne/index.html",
+    "main.bff29bbd.css.map": "/jsappOne/static/css/main.bff29bbd.css.map",
+    "main.0ffcc8a0.js.map": "/jsappOne/static/js/main.0ffcc8a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bff29bbd.css",
+    "static/js/main.0ffcc8a0.js"
+  ]
+}
