@@ -14,10 +14,10 @@ function Home() {
   useEffect(()=>{
     getMovies();
   },[]);
-  console.log(movies)
   return (
       <div>
         <button><Link to='/hello1'>gotoDrag1</Link></button>
+        <button><Link to='/hello2'>gotoDrag2</Link></button>
         {loading ? <h1>Loading...</h1> : null}
         {movies.map((movie)=> 
         <Movie 

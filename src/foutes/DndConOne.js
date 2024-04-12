@@ -1,7 +1,7 @@
 import update from 'immutability-helper'
 import { useCallback, useState } from 'react'
 import { useDrop, DndProvider } from 'react-dnd'
-import Box from './Box.js'
+import Box from '../components/Box.js'
 import styles from '../css/Drag.module.css'
 
 
