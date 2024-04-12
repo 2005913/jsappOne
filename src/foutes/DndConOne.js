@@ -5,7 +5,7 @@ import Box from './Box.js'
 import styles from '../css/Drag.module.css'
 
 
-const DndCon = ({hideSourceOnDrag}) =>{
+const DndConOne = ({hideSourceOnDrag}) =>{
   const [boxes, setBoxes] = useState({
     a: {top: 20, left: 80, title: 'Drag me around'},
     b: {top: 200, left: 20, title: '드래그용'},
@@ -59,4 +59,4 @@ const DndCon = ({hideSourceOnDrag}) =>{
 }
 
 
-export default DndCon
+export default DndConOne

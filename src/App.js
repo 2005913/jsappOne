@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./foutes/Home";
 import Detail from "./foutes/Detail";
-import DndCon from "./foutes/DndCon";
+import DndConOne from "./foutes/DndConOne";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   <Routes>
     <Route path="/movie/:id" element={<Detail/>}></Route>
     <Route path="/" element={<Home/>}></Route>
-    <Route path="/hello" element={<DndCon/>}></Route>
+    <Route path="/hello1" element={<DndConOne/>}></Route>
   </Routes>)
 }
 

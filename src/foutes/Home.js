@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Movie from "../components/Movie";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -16,6 +17,7 @@ function Home() {
   console.log(movies)
   return (
       <div>
+        <button><Link to='/hello1'>gotoDrag1</Link></button>
         {loading ? <h1>Loading...</h1> : null}
         {movies.map((movie)=> 
         <Movie 
