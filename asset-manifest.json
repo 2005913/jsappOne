@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/jsappOne.git/static/css/main.bff29bbd.css",
-    "main.js": "/jsappOne.git/static/js/main.cd1a2002.js",
+    "main.js": "/jsappOne.git/static/js/main.c020bd09.js",
     "index.html": "/jsappOne.git/index.html",
     "main.bff29bbd.css.map": "/jsappOne.git/static/css/main.bff29bbd.css.map",
-    "main.cd1a2002.js.map": "/jsappOne.git/static/js/main.cd1a2002.js.map"
+    "main.c020bd09.js.map": "/jsappOne.git/static/js/main.c020bd09.js.map"
   },
   "entrypoints": [
     "static/css/main.bff29bbd.css",
-    "static/js/main.cd1a2002.js"
+    "static/js/main.c020bd09.js"
   ]
 }
