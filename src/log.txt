@@ -1,0 +1,43 @@
+import { useState, useEffect } from "react";
+
+function App() {
+  const [loading, setLoading] = useState(true);
+  const [coins, setCoins] = useState([])
+  const [money, setMoney] = useState("");
+  const [canBuy, setCanBuy] = useState("");
+  useEffect(()=>{{
+    fetch("https://api.coinpaprika.com/v1/tickers")
+    .then((response)=> response.json())
+    .then((json)=>{
+    setCoins(json);
+    setLoading(false)
+  });
+  }},[])
+  useEffect(()=>{
+    if(coins.length>0){
+      const numOnePrice = coins[0].quotes.USD.price;
+    setCanBuy(numOnePrice)
+    }
+  }, [coins])
+
+  const lookChangedMoney= (e)=>{
+    if(money=="") return null;
+    return <span> -- {money/e}</span>
+  }
+ 
+  const onMoneyChange = (e)=> setMoney(e.target.value)
+  const onCoinChange = (e) => setCanBuy(e.target.value);
+  return (
+      <div>
+        <h1>The Coins({(coins.length)}) </h1>
+        <input type="text" onChange={onMoneyChange} placeholder="달러를 입력하시요" value={money}/>
+        {loading ? <strong>Loading...</strong> : <select onChange={onCoinChange}>
+          {coins.map((e)=><option key={e.id} value={e.quotes.USD.price}>{e.name} ({e.symbol}) - {e.quotes.USD.price}USD </option>)}
+        </select>}
+        {money=="" ? null : <h1>{money}$로 {lookChangedMoney(canBuy)}구매 가능</h1>}
+        
+      </div>
+    );
+}
+
+export default App;
